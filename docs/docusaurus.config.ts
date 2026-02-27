@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'OttoTest Docs',
-  tagline: 'Product documentation for OttoTest',
+  title: 'Ottotest Documentation',
+  tagline: 'Streamline QA with an All-in-One AI-Powered Test Automation Platform',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -37,17 +37,17 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/zealous-tech/ottotest-docs-public/tree/main/docs/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          editUrl: 'https://github.com/zealous-tech/ottotest-docs-public/tree/main/docs/',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   feedOptions: {
+        //     type: ['rss', 'atom'],
+        //     xslt: true,
+        //   },
+        //   editUrl: 'https://github.com/zealous-tech/ottotest-docs-public/tree/main/docs/',
+        //   onInlineTags: 'warn',
+        //   onInlineAuthors: 'warn',
+        //   onUntruncatedBlogPosts: 'warn',
+        // },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -61,24 +61,48 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'OttoTest Docs',
-      logo: {
-        alt: 'OttoTest',
-        src: 'img/logo.svg',
-      },
+      title: 'Ottotest Docs',
+      // logo: {
+      //   alt: 'Ottotest',
+      //   src: 'img/logo.svg',
+      // },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Docs',
+          label: 'Test Generation',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/zealous-tech/ottotest-docs-public',
-          label: 'GitHub',
-          position: 'right',
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Test Automation',
         },
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Test Execution',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Test Auto-healing',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Test Management',
+        },
+        // {to: '/blog', label: 'Blog', position: 'left'},
+        // {
+        //   href: 'https://github.com/zealous-tech/ottotest-docs-public',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
@@ -86,17 +110,19 @@ const config: Config = {
       links: [
         {
           title: 'Docs',
-          items: [{label: 'Intro', to: '/docs/intro'}],
-        },
-        {
-          title: 'More',
           items: [
-            {label: 'Blog', to: '/blog'},
-            {label: 'GitHub', href: 'https://github.com/zealous-tech/ottotest-docs-public'},
-          ],
+            {label: 'Intro', to: '/docs/intro'},
+          ]
         },
+        // {
+        //   title: 'More',
+        //   items: [
+        //     {label: 'Blog', to: '/blog'},
+        //     {label: 'GitHub', href: 'https://github.com/zealous-tech/ottotest-docs-public'},
+        //   ],
+        // },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Zealous Tech. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} <a href="https://zealous.tech" target="_blank">zealous.tech</a>`,
     },
     prism: {
       theme: prismThemes.github,

@@ -11,46 +11,67 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
+    title: 'Test Case Generation',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Instantly create structured, high-coverage test cases directly from requirements—saving time and improving quality.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Test Case Automation',
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    description: (
+      <>
+        Turn plain English test cases into fully automated tests—no coding required, just faster and smarter automation.
+      </>
+    ),
+  },
+  {
+    title: 'Test Cases Execution',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Execute test set in a fast, stable, fully integrated cloud environment with parallel execution for quicker and reliable results.
+      </>
+    ),
+  },
+  {
+    title: 'Test Cases Auto-healing',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        Reduce efforts to adapt and repair automated tests when the application changes—reducing failures, minimizing maintenance, and keeping your test suite resilient.
+      </>
+    ),
+  },
+  {
+    title: 'Test Case Management',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        Comprehensive, end-to-end test management competitive with market leaders—covering all essential features, enhanced with AI to streamline planning, tracking, and reporting.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+      <div className={styles.featureCard}>
+        <div className={styles.featureContent}>
+          <Heading as="h3" className={styles.featureTitle}>
+            {title}
+          </Heading>
+          <p className={styles.featureDescription}>{description}</p>
+          <button
+            type="button"
+            className={clsx('button button--primary button--lg', styles.featureButton)}>
+            Learn More
+          </button>
+        </div>
       </div>
     </div>
   );
