@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Ottotest Documentation',
   tagline: 'Streamline QA with an All-in-One AI-Powered Test Automation Platform',
-  favicon: 'img/favicon.ico',
+  // favicon: 'img/favicon.ico',
 
   future: {
     v4: true,
