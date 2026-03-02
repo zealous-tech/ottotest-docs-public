@@ -67,36 +67,13 @@ const config: Config = {
       //   src: 'img/logo.svg',
       // },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Test Generation',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Test Automation',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Test Execution',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Test Auto-healing',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Test Management',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'tutorialSidebar',
+        //   position: 'left',
+        //   label: 'Test Generation',
+        // },
+        
         // {to: '/blog', label: 'Blog', position: 'left'},
         // {
         //   href: 'https://github.com/zealous-tech/ottotest-docs-public',
@@ -108,12 +85,12 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Docs',
-          items: [
-            {label: 'Intro', to: '/docs/intro'},
-          ]
-        },
+        // {
+        //   title: 'Docs',
+        //   items: [
+        //     {label: 'Intro', to: '/docs/intro'},
+        //   ]
+        // },
         // {
         //   title: 'More',
         //   items: [
