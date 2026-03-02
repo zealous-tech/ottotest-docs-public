@@ -1,5 +1,6 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
@@ -7,6 +8,7 @@ type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: ReactNode;
+  link: string;
 };
 
 const FeatureList: FeatureItem[] = [
@@ -18,6 +20,7 @@ const FeatureList: FeatureItem[] = [
         Instantly create structured, high-coverage test cases directly from requirements—saving time and improving quality.
       </>
     ),
+    link: '#',
   },
   {
     title: 'Test Case Automation',
@@ -27,6 +30,7 @@ const FeatureList: FeatureItem[] = [
         Turn plain English test cases into fully automated tests—no coding required, just faster and smarter automation.
       </>
     ),
+    link: '/docs/automation',
   },
   {
     title: 'Test Cases Execution',
@@ -36,6 +40,7 @@ const FeatureList: FeatureItem[] = [
         Execute test set in a fast, stable, fully integrated cloud environment with parallel execution for quicker and reliable results.
       </>
     ),
+    link: '#',
   },
   {
     title: 'Test Cases Auto-healing',
@@ -45,6 +50,7 @@ const FeatureList: FeatureItem[] = [
         Reduce efforts to adapt and repair automated tests when the application changes—reducing failures, minimizing maintenance, and keeping your test suite resilient.
       </>
     ),
+    link: '#',
   },
   {
     title: 'Test Case Management',
@@ -54,10 +60,11 @@ const FeatureList: FeatureItem[] = [
         Comprehensive, end-to-end test management competitive with market leaders—covering all essential features, enhanced with AI to streamline planning, tracking, and reporting.
       </>
     ),
+    link: '#',
   },
 ];
 
-function Feature({title, description}: FeatureItem) {
+function Feature({title, description, link}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className={styles.featureCard}>
@@ -66,11 +73,11 @@ function Feature({title, description}: FeatureItem) {
             {title}
           </Heading>
           <p className={styles.featureDescription}>{description}</p>
-          <button
-            type="button"
+          <Link
+            to={link}
             className={clsx('button button--primary button--lg', styles.featureButton)}>
             Learn More
-          </button>
+          </Link>
         </div>
       </div>
     </div>

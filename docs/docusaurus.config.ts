@@ -37,17 +37,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/zealous-tech/ottotest-docs-public/tree/main/docs/',
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   feedOptions: {
-        //     type: ['rss', 'atom'],
-        //     xslt: true,
-        //   },
-        //   editUrl: 'https://github.com/zealous-tech/ottotest-docs-public/tree/main/docs/',
-        //   onInlineTags: 'warn',
-        //   onInlineAuthors: 'warn',
-        //   onUntruncatedBlogPosts: 'warn',
-        // },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
