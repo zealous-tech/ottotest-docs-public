@@ -38,6 +38,25 @@ export default function Home(): ReactNode {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <section style={{margin: '3rem 0'}}>
+          <div className="container">
+            <Heading as="h2" className="text--center">
+              Video Demo
+            </Heading>
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                marginTop: '1.5rem',
+              }}>
+              <video
+                controls
+                style={{borderRadius: '12px', maxWidth: '800px', width: '100%'}}>
+                <source src="/videos/demo.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </section>
       </main>
     </Layout>
   );
