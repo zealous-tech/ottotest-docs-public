@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # Congratulations!
 
-You have just learned the **basics of AI Powered Test Automation with Ottotest**.
+You have just learned the **details of AI Powered Test Automation with Ottotest**.
 
 Ottotest has **much more to offer**!
 
