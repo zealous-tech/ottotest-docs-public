@@ -1,0 +1,8 @@
+{
+  "label": "More Details",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Tutorial to learn AI Powered Test Automation with Ottotest."
+  }
+}
