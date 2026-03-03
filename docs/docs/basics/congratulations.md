@@ -14,4 +14,4 @@ Anything **unclear** or **buggy** in this tutorial? **Please contact to** ottote
 
 ## What's next?
 
-- Read the [official documentation](https://docs.ottotest.io/)
+- Read the [official documentation](https://docs.ottotest.ai/)
