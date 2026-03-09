@@ -15,3 +15,22 @@ Note: CSV files can usually be exported from tools such as **TestRail, BrowserSt
 :::
 
 You can download a [**sample CSV file**](\/files/sample_test_cases_to_import.csv) to understand the required format.
+
+## Required Fields
+
+When preparing your CSV file, several columns must be included for the import to work correctly. Common mandatory fields include:
+- Test Case Title
+- Steps
+- Expected Results
+- Section
+
+Additional optional columns may also be included to provide more details, such as:
+- Preconditions
+- Priority
+- Labels
+- References
+- Test Type
+- ETC
+
+Once the CSV file is uploaded, Ottotest will automatically generate the corresponding test cases in the selected repository section.
+
