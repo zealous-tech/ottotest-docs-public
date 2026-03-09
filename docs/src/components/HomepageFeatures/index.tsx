@@ -20,7 +20,7 @@ const FeatureList: FeatureItem[] = [
         Instantly create structured, high-coverage test cases directly from requirements—saving time and improving quality.
       </>
     ),
-    link: '#',
+    link: '/docs/test_case_generation/test_generation',
   },
   {
     title: 'Test Case Automation',
@@ -30,7 +30,7 @@ const FeatureList: FeatureItem[] = [
         Turn plain English test cases into fully automated tests—no coding required, just faster and smarter automation.
       </>
     ),
-    link: '/docs/automation',
+    link: '/docs/test_automation/automation',
   },
   {
     title: 'Test Cases Execution',

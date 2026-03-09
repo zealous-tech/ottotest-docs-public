@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Automation Intro
+# Intro
 
 Discover **AI-powered test automation with Ottotest**.
 
