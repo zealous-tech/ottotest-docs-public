@@ -32,5 +32,9 @@ Additional optional columns may also be included to provide more details, such a
 - Test Type
 - ETC
 
+:::tip[Recommended]
+**Note**: There are no restrictions on column names; just ensure they are mapped to the appropriate fields in ottotest during the import flow.
+:::
+
 Once the CSV file is uploaded, Ottotest will automatically generate the corresponding test cases in the selected repository section.
 
