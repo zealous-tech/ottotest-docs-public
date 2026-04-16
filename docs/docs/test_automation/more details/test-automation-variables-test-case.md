@@ -13,7 +13,7 @@ Using variables helps to:
 - Make tests reusable across different environments
 - Support dynamic values extracted during execution
 
-Ottotest supports **four types of variables.**
+Ottotest supports **Five types of variables.**
 
 ## Variable Types
 ### Profile Variables
@@ -128,3 +128,29 @@ Verify order ${order_id} is present in Order History
 ```
 
 Runtime variables are essential for validating dynamic data generated during test execution.
+
+### Attachment variables
+
+**Scope:** Current test case during execution
+
+Attachment variables are created and assigned during test execution. Their values are typically extracted from attached files - currently supporting CSV formatted files.
+
+These variables enable UI validations against data defined in CSV file and attached to test case.
+
+**Scenario**
+User navigates to page where table formatted data is visible and user need to validate the UI table data against pre-created CSV data.
+
+**Note:** data valdiation can be **exact matching** of **regexp matching** based on CSV file content.
+
+**Add Attachment**
+
+There is a dedicated button on top of test step to add/ament attachment files.
+
+**Use attachment variable**
+In test case editor (action or validation) - autocomplete take place.
+
+**Example**
+```
+Verify Flights table's Departure column data matcnhign to City column data from ${att.flights_data} 
+```
+<img src="/img/automation/att_var.png" width="800" alt="Attachment variables usage" />
