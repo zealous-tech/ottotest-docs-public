@@ -44,6 +44,12 @@ A common example is creating a **Login Step Group** that can be reused across ma
 2. Verify url contains "/dashboard"
 ```
 
+:::important
+After adding a **Step Group** to the test, you must sync it with automation.
+
+Go to **Automate with AI → Edit → Sync → Save Automation**.
+:::
+
 ## Pass data or retrieve data from Step Group
 
 Step Groups allow you to reuse a sequence of steps across multiple test cases. Variables can be used to **pass data into a Step Group** or **retrieve data produced inside a Step Group**.
